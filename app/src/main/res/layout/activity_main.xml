@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#eeeeee">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                style="@style/questionTextStyle"
+                android:text="1. Which of the following is an example of non volatile memory ?" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/q1box1"
+                        style="@style/questionChoiceStyle"
+                        android:text="SSD" />
+
+                    <CheckBox
+                        android:id="@+id/q1box2"
+                        style="@style/questionChoiceStyle"
+                        android:text="LSI" />
+
+                    <CheckBox
+                        android:id="@+id/q1box3"
+                        style="@style/questionChoiceStyle"
+                        android:text="ROM" />
+
+                    <CheckBox
+                        android:id="@+id/q1box4"
+                        style="@style/questionChoiceStyle"
+                        android:text="RAM" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/image1"
+                    style="@style/imageView" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/questionTextStyle"
+                android:text="2. Graphic interfaces were first used in a xerox product is called ?" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <RadioButton
+                        android:id="@+id/q2radio1"
+                        style="@style/questionChoiceStyle"
+                        android:text="Ethernet" />
+
+                    <RadioButton
+                        android:id="@+id/q2radio2"
+                        style="@style/questionChoiceStyle"
+                        android:text="Inter LISP" />
+
+
+                    <RadioButton
+                        android:id="@+id/q2radio3"
+                        style="@style/questionChoiceStyle"
+                        android:text="Small talk" />
+
+                    <RadioButton
+                        android:id="@+id/q2radio4"
+                        style="@style/questionChoiceStyle"
+                        android:text="Zeta LISP" />
+
+                </RadioGroup>
+
+
+                <ImageView
+                    android:id="@+id/image2"
+                    style="@style/imageView" />
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/questionTextStyle"
+                android:text="3. Who is the father of the computer?" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/q3editText"
+                    style="@style/questionChoiceStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="80dp"
+                    android:hint="Write the full name here." />
+
+                <ImageView
+                    android:id="@+id/image3"
+                    style="@style/imageView" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/questionTextStyle"
+                android:text="4. The ------ is the administrative section of the computer system?" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/q4radio1"
+                        style="@style/questionChoiceStyle"
+                        android:text="Memory Unit" />
+
+                    <RadioButton
+                        android:id="@+id/q4radio2"
+                        style="@style/questionChoiceStyle"
+                        android:text="Central Processing Unit" />
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/image4"
+                    style="@style/imageView" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/questionTextStyle"
+                android:text="5. CD–ROM is a kind of?" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RadioButton
+                        android:id="@+id/q5radio1"
+                        style="@style/questionChoiceStyle"
+                        android:text="Optical disk" />
+
+                    <RadioButton
+                        android:id="@+id/q5radio2"
+                        style="@style/questionChoiceStyle"
+                        android:text="Magnetic disk" />
+
+
+                    <RadioButton
+                        android:id="@+id/q5radio3"
+                        style="@style/questionChoiceStyle"
+                        android:text="Magneto–Optical disk" />
+
+                    <RadioButton
+                        android:id="@+id/q5radio4"
+                        style="@style/questionChoiceStyle"
+                        android:text="None of these" />
+
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/image5"
+                    style="@style/imageView" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#ac1900" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="#ffffff"
+            android:onClick="checkResult"
+            android:text="done"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>
